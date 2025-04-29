@@ -17,6 +17,28 @@ mobileLinks.forEach(link => {
 // Set current year in footer
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
+// Header fade-in on scroll
+const header = document.querySelector('header');
+const headerScrollThreshold = 800; // Pixels from top to trigger fade-in
+
+function handleHeaderVisibility() {
+    if (!header) return; // Exit if header element not found
+
+    if (window.scrollY > headerScrollThreshold) {
+        header.classList.remove('opacity-0', 'invisible');
+        header.classList.add('bg-white', 'shadow-md', 'visible', 'opacity-100'); // Make visible, add background/shadow
+    } else {
+        header.classList.add('opacity-0', 'invisible');
+        header.classList.remove('bg-white', 'shadow-md', 'visible', 'opacity-100'); // Make invisible, remove background/shadow
+    }
+}
+
+// Initial check in case page loads scrolled
+handleHeaderVisibility();
+
+// Add scroll listener
+window.addEventListener('scroll', handleHeaderVisibility);
+
 // Home section content fade on scroll
 const homeSection = document.getElementById('home');
 const homeContent = document.getElementById('home-content-container');
