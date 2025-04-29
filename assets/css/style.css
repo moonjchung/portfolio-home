@@ -1,0 +1,40 @@
+/* Apply Inter font globally */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Smooth scrolling behavior */
+html {
+   scroll-behavior: smooth;
+}
+
+/* Section fade-in animation */
+.fade-in-section {
+    opacity: 0;
+    /* transform: translateY(20px); */ /* Removed for floating effect */
+    transition: opacity 1.2s ease-out; /* Removed transform transition */
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    /* transform: translateY(0); */ /* Removed for floating effect */
+}
+
+#home {
+    background-image: url('https://live.staticflickr.com/65535/52259221868_8d72be90da_3k.jpg');
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+    /* Remove padding initially, transition it back when open */
+    padding-bottom: 0;
+}
+
+#mobile-menu.mobile-menu-open {
+    max-height: 500px; /* Adjust if menu could be taller */
+    opacity: 1;
+    padding-bottom: 1rem; /* Restore original pb-4 padding */
+}

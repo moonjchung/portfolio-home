@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Chung - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 bg-cover bg-center md:bg-fixed">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600">Moon Chung</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-indigo-600 transition duration-300">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600 hover:text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden px-6 pb-4">
+             <ul class="flex flex-col items-end space-y-3">
+                <li><a href="#home" class="block text-gray-600 hover:text-indigo-600 transition duration-300">Home</a></li>
+                <li><a href="#about" class="block text-gray-600 hover:text-indigo-600 transition duration-300">About</a></li>
+                <li><a href="#projects" class="block text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a></li>
+                <li><a href="#skills" class="block text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a></li>
+                <li><a href="#contact" class="block text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="text-white h-screen flex flex-col items-center justify-center bg-cover bg-center md:bg-fixed">
+            <div id="home-content-container" class="container mx-auto px-6 text-center">
+                <img src="https://placehold.co/150x150/e2e8f0/6366f1?text=You" alt="Your Profile Picture" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/150x150/e2e8f0/6366f1?text=Fallback';">
+                <h1 class="text-4xl md:text-5xl font-bold mb-3 drop-shadow-md">Hi, I'm Moon</h1>
+                <p class="text-xl md:text-2xl mb-8 text-white drop-shadow-md">Aspiring IT Professional | Technical Troubleshooting | Problem Solving</p>
+                <a href="#projects" class="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 shadow-md">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://placehold.co/600x400/e2e8f0/333?text=About+Image" alt="About Me Image" class="rounded-lg shadow-lg w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/333?text=Fallback';">
+                    </div>
+                    <div class="md:w-2/3 text-lg text-gray-700 space-y-4">
+                        <p>Hello! I'm [Your Name], a passionate [Your Profession/Field] based in [Your Location]. I specialize in [Your Key Skill 1], [Your Key Skill 2], and [Your Key Skill 3].</p>
+                        <p>I have a background in [Your Education/Experience Highlight] and enjoy creating [Type of Projects you enjoy - e.g., intuitive web applications, engaging user experiences, efficient backend systems].</p>
+                        <p>When I'm not coding or designing, you can find me [Your Hobby 1], [Your Hobby 2], or exploring [Your Interest]. I'm always eager to learn new things and take on challenging projects.</p>
+                        <a href="#contact" class="inline-block mt-4 bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=Project+1" alt="Project 1 Screenshot" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0e7ff/4f46e5?text=Fallback+1';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title 1</h3>
+                            <p class="text-gray-600 mb-4">A brief description of the project, highlighting key features and technologies used.</p>
+                            <div class="flex space-x-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                                <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">CSS</span>
+                                <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            </div>
+                            <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project &rarr;</a>
+                             <a href="#" target="_blank" class="ml-4 text-gray-500 hover:text-gray-700 font-medium">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/d1fae5/059669?text=Project+2" alt="Project 2 Screenshot" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/d1fae5/059669?text=Fallback+2';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title 2</h3>
+                            <p class="text-gray-600 mb-4">Another project description. Mention the problem it solves or the main goal.</p>
+                             <div class="flex space-x-2 mb-4">
+                                <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                                <span class="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                                <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Database</span>
+                            </div>
+                            <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project &rarr;</a>
+                             <a href="#" target="_blank" class="ml-4 text-gray-500 hover:text-gray-700 font-medium">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/fef3c7/d97706?text=Project+3" alt="Project 3 Screenshot" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fef3c7/d97706?text=Fallback+3';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title 3</h3>
+                            <p class="text-gray-600 mb-4">Detail the technologies and challenges involved in this project.</p>
+                             <div class="flex space-x-2 mb-4">
+                                <span class="bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">API</span>
+                                <span class="bg-teal-100 text-teal-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Data Viz</span>
+                            </div>
+                            <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project &rarr;</a>
+                             <a href="#" target="_blank" class="ml-4 text-gray-500 hover:text-gray-700 font-medium">View Code &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <section id="skills" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-indigo-600">🚀</div>
+                        <h4 class="font-semibold text-lg text-gray-700">HTML5</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-blue-500">🎨</div>
+                        <h4 class="font-semibold text-lg text-gray-700">CSS3 & Tailwind</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-yellow-500">💻</div>
+                        <h4 class="font-semibold text-lg text-gray-700">JavaScript</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-cyan-500">⚛️</div>
+                        <h4 class="font-semibold text-lg text-gray-700">React</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-green-500">⚙️</div>
+                        <h4 class="font-semibold text-lg text-gray-700">Node.js</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-yellow-600">🐍</div>
+                        <h4 class="font-semibold text-lg text-gray-700">Python</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-gray-600">🔧</div>
+                        <h4 class="font-semibold text-lg text-gray-700">Git & GitHub</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-purple-500">📊</div>
+                        <h4 class="font-semibold text-lg text-gray-700">Databases</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-red-500">☁️</div>
+                        <h4 class="font-semibold text-lg text-gray-700">APIs</h4>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <div class="text-4xl mb-3 text-orange-500">✨</div>
+                        <h4 class="font-semibold text-lg text-gray-700">UI/UX Design</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-indigo-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-lg text-gray-700 mb-8">
+                        I'm currently available for freelance work or new opportunities. If you have a project in mind, want to collaborate, or just want to say hi, feel free to reach out!
+                    </p>
+                    <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md mb-6">
+                        Email Me
+                    </a>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                            <span class="sr-only">GitHub</span> </a>
+                        <a href="#" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.23 5.636a9.177 9.177 0 00-1.28-1.443c-1.042-.98-2.31-1.54-3.717-1.54H6.766c-1.41 0-2.68.56-3.72 1.54a5.33 5.33 0 00-1.54 3.717v10.5c0 1.406.56 2.676 1.54 3.716s2.31 1.54 3.72 1.54h10.466c1.407 0 2.677-.56 3.717-1.54s1.54-2.31 1.54-3.716v-10.5a5.33 5.33 0 00-1.54-3.717zM8.267 19.5H5.765V10.75h2.502V19.5zm-1.25-9.875h-.016a1.46 1.46 0 11.016 0zm10.248 9.875h-2.5v-4.43c0-.98-.44-1.65-1.29-1.65s-1.43.67-1.43 1.65v4.43H10.54V10.75h2.5v1.1h.03a2.7 2.7 0 012.45-1.3c1.73 0 3.04 1.12 3.04 3.54v5.41z"/></svg>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> [Your Name]. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
