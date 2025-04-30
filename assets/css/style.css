@@ -54,6 +54,30 @@ html {
     padding-bottom: 1rem; /* Restore original pb-4 padding */
 }
 
+/* Styling for the About Me section container */
+#about {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    padding-top: 4rem;    /* Reverted to original py-16 match */
+    padding-bottom: 4rem; /* Reverted to original py-16 match */
+    padding-left: 1.5rem;  /* Reverted to original px-6 match */
+    padding-right: 1.5rem; /* Reverted to original px-6 match */
+    border-radius: 0.5rem; /* Added rounded corners */
+    margin-left: auto; /* Center the container */
+    margin-right: auto;
+    max-width: 80rem; /* Corresponds roughly to container mx-auto with padding */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Add subtle shadow */
+    /* Note: Existing Tailwind py-16 and px-6 on the #about section or its container in HTML might be redundant now */
+}
+
+/* Add horizontal margin for #about on mobile */
+@media (max-width: 768px) {
+    #about {
+        margin-left: 1rem;  /* Add space on the left */
+        margin-right: 1rem; /* Add space on the right */
+        /* max-width will still apply, centering within the remaining space */
+    }
+}
+
 /* Adjust background attachment for mobile devices (REMOVED) */
 /* @media (max-width: 768px) { */
 /*     body { */
